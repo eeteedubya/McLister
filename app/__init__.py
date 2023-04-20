@@ -6,14 +6,14 @@ from flask import Flask, render_template, request, flash, url_for, session, redi
 
 
 
-app = Flask(__name__, template_folder="/templates")
+app = Flask(__name__)
 
 
 
 @app.route('/')
 def home():
-    return render_template('templates\index.html')
-
+    return render_template('index.html')
+    # return "This is the new index page."
 
 
 
